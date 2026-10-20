@@ -1,0 +1,2 @@
+const {contextBridge,ipcRenderer}=require('electron');
+contextBridge.exposeInMainWorld('feiyue',{window:action=>{if(['toggle','hide','main','projects'].includes(action))ipcRenderer.send('feiyue:window',action);},drag:(action,x,y)=>{if(['begin','move','end'].includes(action)&&Number.isFinite(x)&&Number.isFinite(y))ipcRenderer.send('feiyue:drag',action,x,y);},onNavigate:handler=>{const listener=(_event,section)=>{if(section==='projects')handler(section);};ipcRenderer.on('feiyue:navigate',listener);return()=>ipcRenderer.removeListener('feiyue:navigate',listener);}});
