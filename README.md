@@ -47,3 +47,9 @@ TypeScript 检查通过；网站构建通过；实际浏览器验证输入、勾
 生产发布：检查 drizzle 中的纯结构迁移 → 测试与 Worker 构建 → Sites 源码同步及打包 → save_version_and_deploy_private；Sites 在 Worker 上传前自动应用 D1 迁移。不得上传 .wrangler、installation-backups、desktop-build、desktop-release 或任何个人日程备份。
 
 GitHub 公开源码仓库：https://github.com/SasaFreya/feiyue-planner 。源码不含个人日程与安装包。
+
+## 直接下载安装
+
+[下载 Mac Apple Silicon 安装包 0.3.1](https://github.com/SasaFreya/feiyue-planner/releases/download/v0.3.1/Feiyue-Planner-0.3.1-macOS-arm64.zip) · [版本说明](https://github.com/SasaFreya/feiyue-planner/releases/tag/v0.3.1)
+
+解压后将 .app 拖入“应用程序”。适用于 M 系列 Mac，使用空数据种子，不包含个人日程。未经过 Apple 公证；其他 Mac 首次安装未实机验证。桌面本机数据与私人云端数据独立。

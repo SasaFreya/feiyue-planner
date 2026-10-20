@@ -14,7 +14,7 @@
     "db:generate": "drizzle-kit generate",
     "desktop:build": "node desktop-shell/build.mjs",
     "desktop:dev": "npm run desktop:build && electron desktop-build",
-    "desktop:package": "npm run desktop:build && electron-packager desktop-build 飞跃日程规划本 --platform=darwin --arch=arm64 --out=desktop-release --overwrite --app-bundle-id=local.feiyue.planner --app-version=0.3.0 --electron-version=38.8.4 --icon=desktop-shell/icon.icns --asar --extra-resource=desktop-build/native/activity-agent",
+    "desktop:package": "npm run desktop:build && electron-packager desktop-build 飞跃日程规划本 --platform=darwin --arch=arm64 --out=desktop-release --overwrite --app-bundle-id=local.feiyue.planner --app-version=0.3.1 --electron-version=38.8.4 --icon=desktop-shell/icon.icns --asar --extra-resource=desktop-build/native/activity-agent",
     "local": "node desktop-build/standalone.cjs",
     "test:planner": "node desktop-shell/test.mjs",
     "desktop:preview": "vite --config desktop-shell/vite.config.ts"
